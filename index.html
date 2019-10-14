@@ -73,29 +73,29 @@
                    <script type="text/javascript">
                         var listitem = 0;
                         function addToList() {
-                            if (listitem >=4) {
+                                if (listitem >=4) {
                                 listitem = 0;
                             }
-                            if (listitem == 0) {
-                            var skills = "Good skill in English and know Spanish.";
+                                if (listitem == 0) {
+                        var skills = "Good skill in English and know Spanihs.";
                             }
-                            if (listitem == 1) {
-                            var skills = "Strategic sales & Marketing campaigns.";
+                                if (listitem == 1) {
+                        var skills = "Strategic Sales & Marketing Campaigns.";
                             }
-                            if (listitem == 2) {
-                            var skills = "Microsoft Word, Excels, Adobe Photoshop, Power Point, E-mails, Internet.";
+                                if (listitem == 2) {
+                        var skills = "Microsoft Word, Excels, Adobe Photoshop, Power Point, E-mails, Internet.";
                             }
-                            if (listitem == 3) {
-                            var skillse = "Strong sales presentations / Closing success";
+                                if (listitem == 3) {
+                        var skills = "Strong Sales Presentations / Closing success";
                             }
                             listitem++
 
-                            var newnode=document.createElement("LI");
-                            var textnode = document.createTextNode(skills);
+                        var newnode=document.createElement("LI");
+                        var textnode=document.createTextNode(skills);
                             newnode.append(textnode);
                             document.getElementById("myskills").appendChild(newnode);
-                 
-                        }
+
+                            }
 
                    </script>
                    <script>
@@ -115,13 +115,6 @@
                         <button onclick="addToList()">ADD SKILLS</button>
                         <button onclick="removeFromList()">REMOVE SKILLS</button>
 
-                        <script>
-                            function myFunction() {
-                              var list = document.getElementById("myList");
-                              list.removeChild(list.childNodes[0]);
-                            }
-                    </script>
-                      
 
                       <h2 >CONTACT INFO:</h2>
                       <P>Mobile.: + 66 65 623 3306</P>

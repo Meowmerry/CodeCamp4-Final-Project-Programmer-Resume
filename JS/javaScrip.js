@@ -19,7 +19,7 @@
         var skills = "Microsoft Word, Excels, Adobe Photoshop, Power Point, E-mails, Internet.";
         }
         if (listitem == 3) {
-        var skillse = "Strong Sales Presentations / Closing success";
+        var skills = "Strong Sales Presentations / Closing success";
         }
         listitem++
 
