@@ -40,11 +40,35 @@
     <div class="header">
         <div class="container">
                 
-                <img src="img/Photoinfo.png" onclick="changeBodyBg('pink');" title="Click to change web pag color" alt=" style="style="max-width:100%;height:auto;">
+                <img id="changeColor" src="img/Photoinfo.png" title="Click to change web pag color" alt=" style="style="max-width:100%;height:auto;">
+                <script>
+                 const changeColor = document.getElementById('changeColor'),
+                        colors      = ['pink','red', 'green', 'blue','grey'];
+                        let   colorIndex  = 0;
+
+                        changeColor.addEventListener('click', () => {
+                        document.body.style.backgroundColor = colors[colorIndex];      
+                        colorIndex = (colorIndex + 1) % colors.length
+                        });
+                </script>             
 
                 <div class="header_area">
                 
-                    <h1 onclick="this.innerHTML='Christina Aguilera!'" title="Click on my name to change!">THASANEE    PUTTAMADILOK</h1>
+                    <h1 id="changename" onclick="mynameFunction()" title="Click on the name to change!">THASANEE    PUTTAMADILOK</h1>
+                   
+                    <script>
+                    function mynameFunction() {
+                    var name;
+                    var username = prompt("Please enter the name:", "Thasanee Puttamadilok");
+                    if (username == null || username == "") {
+                    name = "User cancelled the prompt.";
+                    } else {
+                    name = username;
+                    }
+                    document.getElementById("changename").innerHTML = name;
+                     }
+                    </script>
+
                     <h2 >Nickname : Meow</h2>
                     <h3 >EXPORT OFFICER<h3>
                     <br>
